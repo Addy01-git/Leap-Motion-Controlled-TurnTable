@@ -62,5 +62,6 @@ Leap-Motion-Controlled-TurnTable<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			    |	stepper_motor.ino<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|	README.txt<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|	TurnTable - Wiring diagram.jpg<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|	processing code v1.txt<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|	arduino code v1.txt<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|	v1 files<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|	processing code v1.txt<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|	arduino code v1.txt<br />
