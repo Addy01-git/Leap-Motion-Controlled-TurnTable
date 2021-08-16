@@ -2,9 +2,9 @@
 
 REQUIREMENTS:<br />
 
- 	LeapDevelopmentKit 3.2.1 (download link: https://developer-archive.leapmotion.com/get-started?id=v3-developer-beta&platform=windows&version=3.2.1.45911)<br />
+ 	LeapDevelopmentKit 3.2.1 (download link: https://developer-archive.leapmotion.com/get-started?id=v3-developer-beta&platform=windows&version=3.2.1.45911)
 
-	Processing 3 (download link: https://processing.org/download/)<br />
+	Processing 3 (download link: https://processing.org/download/)
 
 ________________________________________________________________________________________________________________________________________<br />
 
@@ -12,7 +12,7 @@ STEPS:<br />
 
 	Download requirements if necessary
 												_
-	After installing LeapDevelopmentKit 3.2.1, unzip the folder to the desired location	 |- (source: \LeapDeveloperKit_3.2.1+45911_win\README.txt)<br />
+	After installing LeapDevelopmentKit 3.2.1, unzip the folder to the desired location	 |- (source: \LeapDeveloperKit_3.2.1+45911_win\README.txt)
 	Run the .exe file and copy the LeapSDK folder to a suitable location on your computer 	_|
 
 	Connect the Leap Motion controller
@@ -42,10 +42,10 @@ NOTES: <br />
 									
 	The stepper motor driver used is a 'a4988 stepper motor driver'
 	The capacitor used is 100 microFarad 				  
-	The Power Supply is 12v					        
+	The Power Supply is 12v	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]- (reference: https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/)			        
 	
-	Files 'processing code v1.txt' and 'arduino code v1.txt' together makes the motor turn one revolution for every 'swipe gesture'. Right swipe will make the motor spin clockwise and vice-versa (reference: https://developer-archive.leapmotion.com/documentation/v2/java/devguide/Leap_Gestures.html)<br />
-	The controller takes images upto 300 frames per second and one swipe might be recorded as 2-4 depending on the speed of the swipe, causing it to revolve multiple times.<br />
+	Files 'processing code v1.txt' and 'arduino code v1.txt' together makes the motor turn one revolution for every 'swipe gesture'. Right swipe will make the motor spin clockwise and vice-versa (reference: https://developer-archive.leapmotion.com/documentation/v2/java/devguide/Leap_Gestures.html)
+	The controller takes images upto 300 frames per second and one swipe might be recorded as 2-4 depending on the speed of the swipe, causing it to revolve multiple times.
   
 ________________________________________________________________________________________________________________________________________<br />
 	
