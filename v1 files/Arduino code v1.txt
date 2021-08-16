@@ -1,0 +1,46 @@
+#define dirPin 4
+#define stepPin 5
+#define stepsPerRevolution 200
+
+char val = '0';
+
+void setup() {
+  // Declare pins as output:
+
+  pinMode(stepPin, OUTPUT);
+  pinMode(dirPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (Serial.available())
+  {
+    val = Serial.read();
+  }
+  if (val == 'r')
+  {
+    digitalWrite(dirPin, HIGH);
+    for (int i = 0; i < stepsPerRevolution; i++) {
+    // These four lines result in 1 step:
+    digitalWrite(stepPin, HIGH);
+    delayMicroseconds(3000);
+    digitalWrite(stepPin, LOW);
+    delayMicroseconds(3000);
+  }
+  val = '0';
+  }
+  
+  else if (val == 'l')
+  {
+    digitalWrite(dirPin, LOW);
+    for (int i = 0; i < stepsPerRevolution; i++) {
+    // These four lines result in 1 step:
+    digitalWrite(stepPin, HIGH);
+    delayMicroseconds(3000);
+    digitalWrite(stepPin, LOW);
+    delayMicroseconds(3000);
+  }
+  val = '0';
+  }
+
+}

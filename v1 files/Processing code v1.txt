@@ -1,0 +1,60 @@
+import java.lang.Thread;
+import de.voidplus.leapmotion.*;
+import processing.serial.*;
+import org.firmata.*;
+import cc.arduino.*;
+
+Arduino arduino;
+Serial myPort;
+LeapMotion leap;
+ 
+int previousTime;
+int dir;
+int speed;
+
+
+void setup() {
+  size(800, 500);
+  background(255);
+  myPort = new Serial(this, "COM8", 9600);
+ 
+  
+  leap = new LeapMotion(this).allowGestures("swipe");  // Leap detects only swipe gestures
+  println("setup complete");
+}
+ 
+void draw() {
+  background(255);
+  
+}
+
+ 
+void leapOnSwipeGesture(SwipeGesture g, int state) {
+
+  PVector direction = g.getDirection();
+  if (direction.x > 0)
+  {
+    println("direction: Right");  
+    myPort.write('r');
+    try {
+          Thread.sleep(3500);
+       } catch (Exception e) {
+           System.out.println(e);
+       }
+    
+  }
+  
+  else if (direction.x < 0)
+  {
+    println("direction: Left");
+    myPort.write('l');
+    try {
+          Thread.sleep(3500);
+       } catch (Exception e) {
+           System.out.println(e);
+       }
+  
+  
+  }
+
+}
