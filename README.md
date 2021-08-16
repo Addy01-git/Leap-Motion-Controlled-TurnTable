@@ -19,7 +19,7 @@ STEPS:<br />
 
 	Search for Leap Motion Visualizer to check if the Leap Motion controller is connected properly
 
-	Refer 'TurnTable - Wiring diagram' to make the connections if necessary
+	Refer 'TurnTable - Wiring diagram' to make the connections
 
 	Connect the Arduino Uno to the PC
 
@@ -42,7 +42,7 @@ NOTES: <br />
 									
 	The stepper motor driver used is a 'a4988 stepper motor driver'
 	The capacitor used is 100 microFarad 				  
-	The Power Supply is 12v	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]- (reference: https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/)			        
+	The Power Supply is 12v	 ]- (reference: https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/)			        
 	
 	Files 'processing code v1.txt' and 'arduino code v1.txt' together makes the motor turn one revolution for every 'swipe gesture'. Right swipe will make the motor spin clockwise and vice-versa (reference: https://developer-archive.leapmotion.com/documentation/v2/java/devguide/Leap_Gestures.html)
 	The controller takes images upto 300 frames per second and one swipe might be recorded as 2-4 depending on the speed of the swipe, causing it to revolve multiple times.
